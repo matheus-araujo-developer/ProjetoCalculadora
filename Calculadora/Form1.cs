@@ -63,7 +63,7 @@ namespace Calculadora
 
         private void button13_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture); //Reconhece o no local certo no resultado final
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture); //Reconhece a "," no local certo no resultado final
             txtResultado.Text = "";
             operacao = "SOMA";
             label1.Text = "+";
@@ -72,7 +72,7 @@ namespace Calculadora
         private void button19_Click(object sender, EventArgs e)
         {
             label1.Text = "=";
-            valor2 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            valor2 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture); //Reconhece a "," no local certo no resultado final
 
             if (operacao == "SOMA")
             {
@@ -92,7 +92,7 @@ namespace Calculadora
 
         private void button14_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture); //Reconhece o no local certo no resultado final
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture); //Reconhece a "," no local certo no resultado final
             txtResultado.Text = "";
             operacao = "SUBTRACAO";
             label1.Text = "-";
@@ -111,7 +111,7 @@ namespace Calculadora
 
         private void button15_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture); //Reconhece o no local certo no resultado final
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture); //Reconhece a "," no local certo no resultado final
             txtResultado.Text = "";
             operacao = "MULTI";
             label1.Text = "X";
@@ -119,7 +119,7 @@ namespace Calculadora
 
         private void button16_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture); //Reconhece o no local certo no resultado final
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture); //Reconhece a "," no local certo no resultado final
             txtResultado.Text = "";
             operacao = "DIVISAO";
             label1.Text = "/";
